@@ -1,0 +1,9 @@
+{% extends 'sns_apps/base.html' %}
+
+{% block content %}
+<form action="" method="POST"  class="g-margin-t-120--xs">
+    {{form.as_p}}
+<button type="submit">送信</button>
+{% csrf_token %}
+</form>
+{% endblock %}
